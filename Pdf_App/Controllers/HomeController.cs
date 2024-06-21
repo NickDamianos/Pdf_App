@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Pdf_App.Models;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting.Internal;
 
-
-
+using System.IO;
 using System.Text;
 using UglyToad.PdfPig;
+using System.IO.Pipes;
 
 using ChatGPT.Net;
 using Microsoft.Data.SqlClient;

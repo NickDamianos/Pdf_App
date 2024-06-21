@@ -6,9 +6,16 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="UploadFile" asp-controller="Home" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept=".pdf" />
-            <input type="submit" value="Upload" />
+        <form asp-action="UploadFile" asp-controller="Home" method="post" enctype="multipart/form-data" class="p-3 border rounded shadow-sm">
+            <div class="mb-3">
+                <label for="file" class="form-label">Choose a PDF file to upload:</label>
+                <input type="file" name="file" accept=".pdf" class="form-control" id="file" />
+            </div>
+
+            <div class="d-grid">
+                <input type="submit" value="Upload" />
+            </div>
+
         </form>
     </div>
     <div class="col-md-4" id="sum_area">
